@@ -7,43 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34F92D0115013EEE0016B04D /* BNRGHReposViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F92CFF15013EEE0016B04D /* BNRGHReposViewController.m */; };
+		34F92D0215013EEE0016B04D /* BNRGHReposViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34F92D0015013EEE0016B04D /* BNRGHReposViewController.xib */; };
+		34F92D06150141F20016B04D /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F92D05150141F20016B04D /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		34F92D09150145FE0016B04D /* GHRepo.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F92D08150145FE0016B04D /* GHRepo.m */; };
+		34F92D0C15014AA80016B04D /* GHKeychainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F92D0B15014AA80016B04D /* GHKeychainHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		34F92D0E15014EAC0016B04D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34F92D0D15014EAC0016B04D /* Security.framework */; };
 		34FE20EC1500240F005BB4F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FE20EB1500240F005BB4F5 /* UIKit.framework */; };
 		34FE20EE1500240F005BB4F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FE20ED1500240F005BB4F5 /* Foundation.framework */; };
 		34FE20F01500240F005BB4F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FE20EF1500240F005BB4F5 /* CoreGraphics.framework */; };
 		34FE20F61500240F005BB4F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34FE20F41500240F005BB4F5 /* InfoPlist.strings */; };
 		34FE20F81500240F005BB4F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE20F71500240F005BB4F5 /* main.m */; };
 		34FE20FC1500240F005BB4F5 /* BNRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE20FB1500240F005BB4F5 /* BNRAppDelegate.m */; };
-		34FE20FF1500240F005BB4F5 /* BNRFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE20FE1500240F005BB4F5 /* BNRFirstViewController.m */; };
+		34FE20FF1500240F005BB4F5 /* BNRGHEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE20FE1500240F005BB4F5 /* BNRGHEventsViewController.m */; };
 		34FE21011500240F005BB4F5 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FE21001500240F005BB4F5 /* first.png */; };
 		34FE21031500240F005BB4F5 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FE21021500240F005BB4F5 /* first@2x.png */; };
-		34FE21061500240F005BB4F5 /* BNRSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE21051500240F005BB4F5 /* BNRSecondViewController.m */; };
+		34FE21061500240F005BB4F5 /* BNRCommitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE21051500240F005BB4F5 /* BNRCommitsViewController.m */; };
 		34FE21081500240F005BB4F5 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FE21071500240F005BB4F5 /* second.png */; };
 		34FE210A1500240F005BB4F5 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FE21091500240F005BB4F5 /* second@2x.png */; };
-		34FE210D1500240F005BB4F5 /* BNRFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FE210B1500240F005BB4F5 /* BNRFirstViewController.xib */; };
-		34FE21101500240F005BB4F5 /* BNRSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FE210E1500240F005BB4F5 /* BNRSecondViewController.xib */; };
+		34FE210D1500240F005BB4F5 /* BNRGHEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FE210B1500240F005BB4F5 /* BNRGHEventsViewController.xib */; };
+		34FE21101500240F005BB4F5 /* BNRCommitsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34FE210E1500240F005BB4F5 /* BNRCommitsViewController.xib */; };
+		34FE211815002463005BB4F5 /* GHEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE211715002463005BB4F5 /* GHEvent.m */; };
+		34FE211D150029B4005BB4F5 /* gh_events.js in Resources */ = {isa = PBXBuildFile; fileRef = 34FE211B1500291B005BB4F5 /* gh_events.js */; };
+		34FE212315002BC3005BB4F5 /* GHCommit.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FE212215002BC3005BB4F5 /* GHCommit.m */; };
+		34FE212615002EAB005BB4F5 /* gh_commits.js in Resources */ = {isa = PBXBuildFile; fileRef = 34FE212415002EA3005BB4F5 /* gh_commits.js */; };
+		34FE2128150039B2005BB4F5 /* empty_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 34FE2127150039B2005BB4F5 /* empty_avatar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34F92CFE15013EEE0016B04D /* BNRGHReposViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRGHReposViewController.h; sourceTree = "<group>"; };
+		34F92CFF15013EEE0016B04D /* BNRGHReposViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRGHReposViewController.m; sourceTree = "<group>"; };
+		34F92D0015013EEE0016B04D /* BNRGHReposViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRGHReposViewController.xib; sourceTree = "<group>"; };
+		34F92D04150141F20016B04D /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		34F92D05150141F20016B04D /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		34F92D07150145FE0016B04D /* GHRepo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHRepo.h; sourceTree = "<group>"; };
+		34F92D08150145FE0016B04D /* GHRepo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHRepo.m; sourceTree = "<group>"; };
+		34F92D0A15014AA80016B04D /* GHKeychainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHKeychainHelper.h; sourceTree = "<group>"; };
+		34F92D0B15014AA80016B04D /* GHKeychainHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHKeychainHelper.m; sourceTree = "<group>"; };
+		34F92D0D15014EAC0016B04D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		34FE20E71500240F005BB4F5 /* BigJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FE20EB1500240F005BB4F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		34FE20ED1500240F005BB4F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		34FE20EF1500240F005BB4F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		34FE20F31500240F005BB4F5 /* BigJSON-Info.plist */ = {isa = PBXFileReference; path = "BigJSON-Info.plist"; sourceTree = "<group>"; };
+		34FE20F31500240F005BB4F5 /* BigJSON-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BigJSON-Info.plist"; sourceTree = "<group>"; };
 		34FE20F51500240F005BB4F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		34FE20F71500240F005BB4F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		34FE20F91500240F005BB4F5 /* BigJSON-Prefix.pch */ = {isa = PBXFileReference; path = "BigJSON-Prefix.pch"; sourceTree = "<group>"; };
-		34FE20FA1500240F005BB4F5 /* BNRAppDelegate.h */ = {isa = PBXFileReference; path = BNRAppDelegate.h; sourceTree = "<group>"; };
+		34FE20F91500240F005BB4F5 /* BigJSON-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BigJSON-Prefix.pch"; sourceTree = "<group>"; };
+		34FE20FA1500240F005BB4F5 /* BNRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRAppDelegate.h; sourceTree = "<group>"; };
 		34FE20FB1500240F005BB4F5 /* BNRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRAppDelegate.m; sourceTree = "<group>"; };
-		34FE20FD1500240F005BB4F5 /* BNRFirstViewController.h */ = {isa = PBXFileReference; path = BNRFirstViewController.h; sourceTree = "<group>"; };
-		34FE20FE1500240F005BB4F5 /* BNRFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRFirstViewController.m; sourceTree = "<group>"; };
+		34FE20FD1500240F005BB4F5 /* BNRGHEventsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRGHEventsViewController.h; sourceTree = "<group>"; };
+		34FE20FE1500240F005BB4F5 /* BNRGHEventsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRGHEventsViewController.m; sourceTree = "<group>"; };
 		34FE21001500240F005BB4F5 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		34FE21021500240F005BB4F5 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		34FE21041500240F005BB4F5 /* BNRSecondViewController.h */ = {isa = PBXFileReference; path = BNRSecondViewController.h; sourceTree = "<group>"; };
-		34FE21051500240F005BB4F5 /* BNRSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRSecondViewController.m; sourceTree = "<group>"; };
+		34FE21041500240F005BB4F5 /* BNRCommitsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRCommitsViewController.h; sourceTree = "<group>"; };
+		34FE21051500240F005BB4F5 /* BNRCommitsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRCommitsViewController.m; sourceTree = "<group>"; };
 		34FE21071500240F005BB4F5 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		34FE21091500240F005BB4F5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		34FE210C1500240F005BB4F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BNRFirstViewController.xib; sourceTree = "<group>"; };
-		34FE210F1500240F005BB4F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BNRSecondViewController.xib; sourceTree = "<group>"; };
+		34FE210C1500240F005BB4F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BNRGHEventsViewController.xib; sourceTree = "<group>"; };
+		34FE210F1500240F005BB4F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BNRCommitsViewController.xib; sourceTree = "<group>"; };
+		34FE211615002463005BB4F5 /* GHEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHEvent.h; sourceTree = "<group>"; };
+		34FE211715002463005BB4F5 /* GHEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHEvent.m; sourceTree = "<group>"; };
+		34FE211B1500291B005BB4F5 /* gh_events.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = gh_events.js; sourceTree = "<group>"; };
+		34FE212115002BC3005BB4F5 /* GHCommit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHCommit.h; sourceTree = "<group>"; };
+		34FE212215002BC3005BB4F5 /* GHCommit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHCommit.m; sourceTree = "<group>"; };
+		34FE212415002EA3005BB4F5 /* gh_commits.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = gh_commits.js; sourceTree = "<group>"; };
+		34FE2127150039B2005BB4F5 /* empty_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_avatar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34F92D0E15014EAC0016B04D /* Security.framework in Frameworks */,
 				34FE20EC1500240F005BB4F5 /* UIKit.framework in Frameworks */,
 				34FE20EE1500240F005BB4F5 /* Foundation.framework in Frameworks */,
 				34FE20F01500240F005BB4F5 /* CoreGraphics.framework in Frameworks */,
@@ -80,6 +109,7 @@
 		34FE20EA1500240F005BB4F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34F92D0D15014EAC0016B04D /* Security.framework */,
 				34FE20EB1500240F005BB4F5 /* UIKit.framework */,
 				34FE20ED1500240F005BB4F5 /* Foundation.framework */,
 				34FE20EF1500240F005BB4F5 /* CoreGraphics.framework */,
@@ -92,16 +122,29 @@
 			children = (
 				34FE20FA1500240F005BB4F5 /* BNRAppDelegate.h */,
 				34FE20FB1500240F005BB4F5 /* BNRAppDelegate.m */,
-				34FE20FD1500240F005BB4F5 /* BNRFirstViewController.h */,
-				34FE20FE1500240F005BB4F5 /* BNRFirstViewController.m */,
+				34FE20FD1500240F005BB4F5 /* BNRGHEventsViewController.h */,
+				34FE20FE1500240F005BB4F5 /* BNRGHEventsViewController.m */,
 				34FE21001500240F005BB4F5 /* first.png */,
 				34FE21021500240F005BB4F5 /* first@2x.png */,
-				34FE21041500240F005BB4F5 /* BNRSecondViewController.h */,
-				34FE21051500240F005BB4F5 /* BNRSecondViewController.m */,
+				34FE21041500240F005BB4F5 /* BNRCommitsViewController.h */,
+				34FE21051500240F005BB4F5 /* BNRCommitsViewController.m */,
 				34FE21071500240F005BB4F5 /* second.png */,
 				34FE21091500240F005BB4F5 /* second@2x.png */,
-				34FE210B1500240F005BB4F5 /* BNRFirstViewController.xib */,
-				34FE210E1500240F005BB4F5 /* BNRSecondViewController.xib */,
+				34FE210B1500240F005BB4F5 /* BNRGHEventsViewController.xib */,
+				34FE210E1500240F005BB4F5 /* BNRCommitsViewController.xib */,
+				34FE211615002463005BB4F5 /* GHEvent.h */,
+				34FE211715002463005BB4F5 /* GHEvent.m */,
+				34FE212115002BC3005BB4F5 /* GHCommit.h */,
+				34FE212215002BC3005BB4F5 /* GHCommit.m */,
+				34F92CFE15013EEE0016B04D /* BNRGHReposViewController.h */,
+				34F92CFF15013EEE0016B04D /* BNRGHReposViewController.m */,
+				34F92D0015013EEE0016B04D /* BNRGHReposViewController.xib */,
+				34F92D04150141F20016B04D /* NSData+Base64.h */,
+				34F92D05150141F20016B04D /* NSData+Base64.m */,
+				34F92D07150145FE0016B04D /* GHRepo.h */,
+				34F92D08150145FE0016B04D /* GHRepo.m */,
+				34F92D0A15014AA80016B04D /* GHKeychainHelper.h */,
+				34F92D0B15014AA80016B04D /* GHKeychainHelper.m */,
 				34FE20F21500240F005BB4F5 /* Supporting Files */,
 			);
 			path = BigJSON;
@@ -110,6 +153,9 @@
 		34FE20F21500240F005BB4F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				34FE2127150039B2005BB4F5 /* empty_avatar.png */,
+				34FE212415002EA3005BB4F5 /* gh_commits.js */,
+				34FE211B1500291B005BB4F5 /* gh_events.js */,
 				34FE20F31500240F005BB4F5 /* BigJSON-Info.plist */,
 				34FE20F41500240F005BB4F5 /* InfoPlist.strings */,
 				34FE20F71500240F005BB4F5 /* main.m */,
@@ -169,13 +215,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FE212615002EAB005BB4F5 /* gh_commits.js in Resources */,
+				34FE211D150029B4005BB4F5 /* gh_events.js in Resources */,
 				34FE20F61500240F005BB4F5 /* InfoPlist.strings in Resources */,
 				34FE21011500240F005BB4F5 /* first.png in Resources */,
 				34FE21031500240F005BB4F5 /* first@2x.png in Resources */,
 				34FE21081500240F005BB4F5 /* second.png in Resources */,
 				34FE210A1500240F005BB4F5 /* second@2x.png in Resources */,
-				34FE210D1500240F005BB4F5 /* BNRFirstViewController.xib in Resources */,
-				34FE21101500240F005BB4F5 /* BNRSecondViewController.xib in Resources */,
+				34FE210D1500240F005BB4F5 /* BNRGHEventsViewController.xib in Resources */,
+				34FE21101500240F005BB4F5 /* BNRCommitsViewController.xib in Resources */,
+				34FE2128150039B2005BB4F5 /* empty_avatar.png in Resources */,
+				34F92D0215013EEE0016B04D /* BNRGHReposViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,8 +238,14 @@
 			files = (
 				34FE20F81500240F005BB4F5 /* main.m in Sources */,
 				34FE20FC1500240F005BB4F5 /* BNRAppDelegate.m in Sources */,
-				34FE20FF1500240F005BB4F5 /* BNRFirstViewController.m in Sources */,
-				34FE21061500240F005BB4F5 /* BNRSecondViewController.m in Sources */,
+				34FE20FF1500240F005BB4F5 /* BNRGHEventsViewController.m in Sources */,
+				34FE21061500240F005BB4F5 /* BNRCommitsViewController.m in Sources */,
+				34FE211815002463005BB4F5 /* GHEvent.m in Sources */,
+				34FE212315002BC3005BB4F5 /* GHCommit.m in Sources */,
+				34F92D0115013EEE0016B04D /* BNRGHReposViewController.m in Sources */,
+				34F92D06150141F20016B04D /* NSData+Base64.m in Sources */,
+				34F92D09150145FE0016B04D /* GHRepo.m in Sources */,
+				34F92D0C15014AA80016B04D /* GHKeychainHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,20 +260,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		34FE210B1500240F005BB4F5 /* BNRFirstViewController.xib */ = {
+		34FE210B1500240F005BB4F5 /* BNRGHEventsViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				34FE210C1500240F005BB4F5 /* en */,
 			);
-			name = BNRFirstViewController.xib;
+			name = BNRGHEventsViewController.xib;
 			sourceTree = "<group>";
 		};
-		34FE210E1500240F005BB4F5 /* BNRSecondViewController.xib */ = {
+		34FE210E1500240F005BB4F5 /* BNRCommitsViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				34FE210F1500240F005BB4F5 /* en */,
 			);
-			name = BNRSecondViewController.xib;
+			name = BNRCommitsViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -311,6 +367,7 @@
 				34FE21151500240F005BB4F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

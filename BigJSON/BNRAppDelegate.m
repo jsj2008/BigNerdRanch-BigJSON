@@ -8,9 +8,9 @@
 
 #import "BNRAppDelegate.h"
 
-#import "BNRFirstViewController.h"
-
-#import "BNRSecondViewController.h"
+#import "BNRGHEventsViewController.h"
+#import "BNRCommitsViewController.h"
+#import "BNRGHReposViewController.h"
 
 @implementation BNRAppDelegate
 
@@ -21,10 +21,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[BNRFirstViewController alloc] initWithNibName:@"BNRFirstViewController" bundle:nil];
-    UIViewController *viewController2 = [[BNRSecondViewController alloc] initWithNibName:@"BNRSecondViewController" bundle:nil];
+    UIViewController *viewController1 = [[BNRGHEventsViewController alloc] initWithNibName:@"BNRGHEventsViewController" bundle:nil];
+    UIViewController *viewController2 = [[BNRCommitsViewController alloc] initWithNibName:@"BNRCommitsViewController" bundle:nil];
+    UIViewController *viewController3 = [[BNRGHReposViewController alloc] initWithNibName:@"BNRGHReposViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, viewController3, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
